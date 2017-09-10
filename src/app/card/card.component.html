@@ -1,0 +1,18 @@
+<md-grid-list cols="3" rowHeight="180px" gutterSize="20px">
+  <md-grid-tile *ngFor="let hotel of hotels; let i = index" >
+    <md-card flex="25" flex-gt-sm="45" flex-gt-md="30" class="example-card">
+    <md-card-header>
+      <md-card-title>{{hotel.name}}</md-card-title>
+    </md-card-header>
+    <md-card-content>
+      <p>
+        {{hotel.description}}
+      </p>
+    </md-card-content>
+    <md-card-actions>
+      <button md-button  class="mat-raised-button mat-accent" color="accent" (click)="onEdit(hotel,i)">EDIT</button>
+      <button md-button class="mat-raised-button" (click)="deleteItem(x, i)">DELETE</button>
+    </md-card-actions>
+  </md-card>
+  </md-grid-tile>
+</md-grid-list>

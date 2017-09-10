@@ -1,0 +1,10 @@
+.mat-card {
+    width: 100%;
+}
+.mat-card-content p {
+    min-height: 34px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
